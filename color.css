@@ -5,40 +5,65 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    background: linear-gradient(to top, #000000,#197008,#4bbb1786);
+    min-height: 100vh;
+    background: linear-gradient(to top, #000000, #197008, #4bbb1786);
     color: whitesmoke;
 }
 
 .container {
     text-align: center;
-    margin-top: 169px;
+    margin-top: 10vh;
+    padding: 0 15px;
+    box-sizing: border-box;
 }
 
 .logo img {
-    width: 300px;
-    margin-bottom: 69px;
+    width: 50%;
+    max-width: 300px;
+    margin-bottom: 40px;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .social-links a {
     text-decoration: none;
-    margin: 15px;
+    margin: 10px;
     opacity: 0.7;
 }
 
 .social-links img {
-    width: 40px;
+    width: 30px;
     transition: opacity 0.3s ease;
 }
 
 .social-links img:hover {
-    opacity: 0;
+    opacity: 0.2;
 }
 
 .description {
-    margin-top: 200px;
+    margin-top: 50px;
 }
 
 .description p {
     margin: 5px 0;
+    font-size: 0.9em;
+}
+
+
+@media (max-width: 480px) {
+    .logo img {
+        width: 70%;
+    }
+
+    .social-links img {
+        width: 25px;
+    }
+
+    .description p {
+        font-size: 0.8em;
+    }
 }
